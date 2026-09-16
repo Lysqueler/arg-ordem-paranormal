@@ -1,0 +1,28 @@
+kind = "web"
+previewPath = "/"
+title = "ARG Ordem Paranormal"
+description = "Uma experiência web imersiva de investigação paranormal com enigmas progressivos, pistas escondidas, papéis rasgados e uma camada secreta de descobertas para fãs de horror investigativo."
+version = "1.0.0"
+id = "artifacts/arg-ordem-paranormal"
+router = "path"
+
+[[services]]
+name = "web"
+paths = [ "/" ]
+localPort = 20345
+
+[services.development]
+run = "pnpm --filter @workspace/arg-ordem-paranormal run dev"
+
+[services.production]
+build = [ "pnpm", "--filter", "@workspace/arg-ordem-paranormal", "run", "build" ]
+serve = "static"
+publicDir = "artifacts/arg-ordem-paranormal/dist/public"
+
+[[services.production.rewrites]]
+from = "/*"
+to = "/index.html"
+
+[services.env]
+PORT = "20345"
+BASE_PATH = "/"

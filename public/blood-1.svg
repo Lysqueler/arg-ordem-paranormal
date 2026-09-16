@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="120" height="140" viewBox="0 0 120 140">
+  <defs>
+    <radialGradient id="g1" cx="40%" cy="35%" r="55%">
+      <stop offset="0%" stop-color="#c41e1a" stop-opacity="0.95"/>
+      <stop offset="55%" stop-color="#7a1010" stop-opacity="0.85"/>
+      <stop offset="100%" stop-color="#3a0808" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <ellipse cx="58" cy="48" rx="42" ry="36" fill="url(#g1)" transform="rotate(-12 58 48)"/>
+  <path d="M72 78 Q78 110 70 128 Q62 118 68 90 Z" fill="#8b1512" opacity="0.7"/>
+  <ellipse cx="48" cy="42" rx="10" ry="6" fill="#e8483a" opacity="0.35" transform="rotate(-20 48 42)"/>
+</svg>

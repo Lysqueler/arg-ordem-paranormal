@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <defs>
+    <mask id="hole">
+      <rect width="200" height="200" fill="white"/>
+      <circle cx="100" cy="100" r="42" fill="black"/>
+    </mask>
+  </defs>
+  <g mask="url(#hole)">
+    <!-- 5 segments of 72deg each, colors matching user image -->
+    <path d="M100,100 L100,8 A92,92 0 0,1 187.5,71.5 Z" fill="#9e3d4a"/>
+    <path d="M100,100 L187.5,71.5 A92,92 0 0,1 155.5,176.5 Z" fill="#7a2f36"/>
+    <path d="M100,100 L155.5,176.5 A92,92 0 0,1 44.5,176.5 Z" fill="#8b3a32"/>
+    <path d="M100,100 L44.5,176.5 A92,92 0 0,1 12.5,71.5 Z" fill="#a65a5a"/>
+    <path d="M100,100 L12.5,71.5 A92,92 0 0,1 100,8 Z" fill="#c4788a"/>
+  </g>
+  <!-- subtle segment gaps -->
+  <g stroke="white" stroke-width="3" stroke-linecap="round">
+    <line x1="100" y1="100" x2="100" y2="8"/>
+    <line x1="100" y1="100" x2="187.5" y2="71.5"/>
+    <line x1="100" y1="100" x2="155.5" y2="176.5"/>
+    <line x1="100" y1="100" x2="44.5" y2="176.5"/>
+    <line x1="100" y1="100" x2="12.5" y2="71.5"/>
+  </g>
+  <circle cx="100" cy="100" r="42" fill="none"/>
+</svg>
